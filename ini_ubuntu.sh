@@ -44,7 +44,7 @@
 
 echo "\
 >> Apply udates"
-#sudo apt-get update
+sudo apt-get update
 
 # instalar python
 echo ">> Install Python"
@@ -54,7 +54,7 @@ echo ">> Install Python"
 
 # instalar docker
 echo ">> Install Docker"
-[ ! -x "$(which docker)" ] && sudo apt-get install \
+[ ! -x "$(which docker)" ] && sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
     curl \
